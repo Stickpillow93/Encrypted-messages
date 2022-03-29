@@ -56,6 +56,7 @@ let dict2 = {
   u: "w",
   w: "x",
   m: "z",
+  k: "y",
   " ": " ",
 };
 function chars(string) {
