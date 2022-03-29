@@ -1,3 +1,4 @@
+// ok
 let x = document.getElementById("txt");
 let y = document.getElementById("txt2");
 let dict = {
