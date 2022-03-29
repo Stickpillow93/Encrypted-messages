@@ -60,6 +60,7 @@ let dict2 = {
   k: "y",
   " ": " ",
 };
+
 function chars(string) {
   return Array.from(String(string));
 }
@@ -68,7 +69,7 @@ function encrypt() {
     alert("enter some text");
   }
   let output_string = "";
-  bruh = chars(x.value);
+  bruh = chars(x.value.toLowerCase());
   for (let i = 0, size = bruh.length; i < size; i++) {
     if (dict[bruh[i]] != undefined) {
       bruh[i] = dict[bruh[i]];
@@ -85,7 +86,7 @@ function encrypt() {
 
 function decrypt() {
   let output_string = "";
-  bruh = chars(x.value);
+  bruh = chars(x.value.toLowerCase());
   for (let i = 0, size = bruh.length; i < size; i++) {
     if (dict2[bruh[i]] != undefined) {
       bruh[i] = dict2[bruh[i]];
