@@ -86,7 +86,7 @@ function encrypt() {
 
 function decrypt() {
   let output_string = "";
-  bruh = chars(x.value.toLowerCase);
+  bruh = chars(x.value.toLowerCase());
   for (let i = 0, size = bruh.length; i < size; i++) {
     if (dict2[bruh[i]] != undefined) {
       bruh[i] = dict2[bruh[i]];
