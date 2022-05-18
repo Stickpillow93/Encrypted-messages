@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="password">
+      <input type="password" id="passwordtxt" placeholder="password" />
+      <button id="passwordsub" onclick="password()">Submit</button>
+    </div>
     <div id="parent">
       <h1 id="hi">Input</h1>
       <input type="text" placeholder="text" id="txt" /> <br />
       <button onclick="encrypt()">Encrypt</button> <br />
 
       <button onclick="decrypt()">Decrypt</button> <br />
-      <h1>Output</h1>
+      <h1 id="hi2">Output</h1>
       <input type="text" placeholder="output" id="txt2" />
     </div>
     <script src="script.js"></script>

@@ -25,3 +25,8 @@ button {
 body {
   background-color: #ccf3ff;
 }
+
+#password{
+  display:grid;
+  justify-content: center;
+}

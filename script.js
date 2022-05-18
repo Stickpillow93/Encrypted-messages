@@ -86,7 +86,7 @@ function encrypt() {
 
 function decrypt() {
   let output_string = "";
-  bruh = chars(x.value.toLowerCase());
+  bruh = chars(x.value.toLowerCase);
   for (let i = 0, size = bruh.length; i < size; i++) {
     if (dict2[bruh[i]] != undefined) {
       bruh[i] = dict2[bruh[i]];
@@ -99,3 +99,15 @@ function decrypt() {
   console.log(output_string);
   navigator.clipboard.writeText(output_string);
 }
+
+function hide() {
+  document.getElementById("parent").style.display = "none";
+}
+
+function password() {
+  if (document.getElementById("passwordtxt").value == "topsecret007") {
+    document.getElementById("password").remove();
+    document.getElementById("parent").style.display = "grid";
+  }
+}
+window.onload = hide;
